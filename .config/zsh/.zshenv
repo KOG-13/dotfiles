@@ -8,4 +8,3 @@ export PATH=/home/kog/.local/bin:$PATH
 export PATH=/home/kog/.local/share/cargo/bin:$PATH
 
 export WGETRC="XDG_CONFIG_HOME/wgetrc"
-export PKGS_FILE="$HOME/.dotfiles/packages"

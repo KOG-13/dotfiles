@@ -32,6 +32,9 @@ dofile(vim.g.base46_cache .. "statusline")
 require "options"
 require "autocmds"
 
+-- Relative line number
+vim.o.relativenumber =true
+
 vim.schedule(function()
   require "mappings"
 end)

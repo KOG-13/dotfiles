@@ -56,8 +56,11 @@ alias cl='clear'
 alias fetch='fastfetch'
 alias v='nvim'
 alias vim='nvim'
-alias wget='wgwt --hsts-file="XDG_CACHE_HOME/wget-hsts"'
+alias wget='wget --hsts-file="XDG_CACHE_HOME/wget-hsts"'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias key='cat ~/Documents/.key.txt | wl-copy'
+alias push='cat ~/Documents/.key.txt | wl-copy && git push'
+alias dotpush='cat ~/Documents/.key.txt | wl-copy && /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME push'
 
 # fzf integration
 eval "$(fzf --zsh)"
@@ -65,3 +68,7 @@ eval "$(zoxide init --cmd cd zsh)"
 eval "$(starship init zsh)"
 
 pokemon-colorscripts --random
+
+export NVM_DIR="$HOME/.local/share/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

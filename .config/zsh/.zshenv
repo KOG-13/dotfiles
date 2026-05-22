@@ -7,4 +7,5 @@ export CARGO_HOME="$XDG_DATA_HOME"/cargo
 export PATH=/home/kog/.local/bin:$PATH
 export PATH=/home/kog/.local/share/cargo/bin:$PATH
 
-export WGETRC="XDG_CONFIG_HOME/wgetrc"
+export WGETRC="$XDG_CONFIG_HOME/wgetrc"
+export NVM_DIR="$XDG_DATA_HOME"/nvm
